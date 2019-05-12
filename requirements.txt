@@ -1,0 +1,10 @@
+tornado==5.1
+aiomysql==0.0.20
+aiopg==0.16.0
+asn1crypto==0.24.0
+peewee==3.9.5
+peewee-async==0.6.2a0
+PyMySQL==0.9.2
+requests==2.21.0
+WTForms==2.2.1
+wtforms-tornado==0.0.2
