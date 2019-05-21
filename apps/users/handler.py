@@ -35,7 +35,7 @@ class SmsHandler(RedisHandler):
         if sms_form.validate():
             mobile = sms_form.mobile.data
             code = self.generate_code()
-            yun_pian = AsyncYunPian('a4f2ef6cfe4c4f0f4377709711066d2c')
+            yun_pian = AsyncYunPian('x')
             return_json = await yun_pian.send_single_sms(code, mobile)
             if return_json["code"] != 0:
                 self.set_status(400)
